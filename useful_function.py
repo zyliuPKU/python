@@ -88,3 +88,12 @@ list(filter(lambda x:x<10,li))
 
 li=[1,2,3,4]
 a,*_=li #a=1,_=[2,3,4]
+
+#13.split&join
+
+s='I am a pig'
+s.split() #['I','am','a','pig']
+
+li=['a','b','c']
+'.'.join(li) #'a.b.c'
+
