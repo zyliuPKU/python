@@ -9,15 +9,15 @@
 4. [**xarray**: 多维数组处理](xarray.py)
 
 ## [实用函数](useful_function.py)
-- `zip`
-- `enumerate`
-- `set` & `frozenset`
-- `eval` & `repr`
-- **collections**: `Counter`
-- **functools**: `lru_cache`, `reduce`
-- `isinstance`
-- **sys**: `setrecursionlimit`
-- `map` & `starmap`
-- `filter`
-- `split` & `join`
-- **warnings**&**numpy**:`seterr`
+- `zip`: 打包多个可迭代对象。
+- `enumerate`: 获取元素索引。
+- `set` & `frozenset`: 集合操作。
+- `eval` & `repr`: 执行字符串和对象表示。
+- **collections**: `Counter`: 计数器。
+- **functools**: `lru_cache`: 缓存函数结果，`reduce`: 累积计算。
+- `isinstance`: 判断类型。
+- **sys**: `setrecursionlimit`: 设置递归深度。
+- `map` & `starmap`: 将函数应用于可迭代对象。
+- `filter`: 筛选数据。
+- `split` & `join`: 字符串分割和合并。
+- **warnings** & **numpy**: `seterr`: 忽略警告处理。
