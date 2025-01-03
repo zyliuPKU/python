@@ -74,10 +74,12 @@ try:
 except ValueError:
   print('error')
 
-#10.map
+#10.map&starmap
 
 map(func,li)
-list(map(lambda x:x**2,li))
+list(map(lambda x:x**2,[1,2,3]))
+starmap(func,li)
+list(starmap(lambda x,y:x+y,[(1,2),(2,3),(3,4)]))
 
 #11.filter
 
