@@ -81,3 +81,7 @@ wgt=[1,2]
 #自定义方法
 xr.apply_ufunc(norm.ppf,da)
 
+#生成nc文件
+da.to_netcdf('data.nc')
+#读取文件
+da=xr.open_dataarray('data.nc')
