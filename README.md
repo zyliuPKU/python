@@ -19,4 +19,4 @@
 - `map` & `starmap`
 - `filter`
 - `split` & `join`
-- **warnings**,**numpy**:seterr
+- **warnings**,**numpy**:`seterr`
