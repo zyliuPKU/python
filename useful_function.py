@@ -52,10 +52,11 @@ isinstance(li,list) #True or False
 #7.1 lru_cache
 from functools import lru_cache
 @lru_cache(1000) #缓存
-def f(x):
-  if x<=1 or x>=100:
-    return x
-  return f(x-1)+f(x+1)
+def fib(n):
+    if n < 2:
+        return n
+    return fib(n-1) + fib(n-2)
+print(fib(100))
   
 #7.2 reduce
 from functools import reduce
