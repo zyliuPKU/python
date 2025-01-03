@@ -9,4 +9,7 @@ this file helps you learn some of important modules and functions, so far contai
 
 4.xarray
 
-5.useful functions
+5.useful functions contains:
+
+  zip,enumerate,set&frozenset,eval&repr,collections.Counter,functools.lru_cache,functools.reduce,isinstance,sys.setrecursionlimit,try,map&starmap,filter,*,split&join,warnings
+
