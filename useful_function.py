@@ -105,3 +105,5 @@ li=['a','b','c']
 #禁止所有烦人的warning，例如除0等
 import warnings
 warnings.filterwarnings("ignore")
+import numpy as np
+np.seterr(divide='ignore', invalid='ignore')
