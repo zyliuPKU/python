@@ -61,3 +61,9 @@ df.rolling(2,min_periods=1).cov()
 df.rolling(2,min_periods=1).rank()
 
 df.rolling(2,min_periods=1).apply(lambda x:x.max()-x.min())
+
+
+#生成文件
+df.to_csv('data.csv')
+#读取文件
+pd.read('data.csv',index_col=0)
