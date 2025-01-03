@@ -12,7 +12,7 @@
 - `zip`, `enumerate`
 - `set` & `frozenset`
 - `eval` & `repr`
-- `collections.Counter`
+- `**collections**.Counter`
 - `functools.lru_cache`, `functools.reduce`
 - `isinstance`
 - `sys.setrecursionlimit`
