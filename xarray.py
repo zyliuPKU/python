@@ -51,7 +51,6 @@ da.argmin(dim='d')
 da.argmax(dim='d')
 da.std(dim='d')
 da.var(dim='d')
-
 da.rank(dim='d')
 da.cumsum(dim='d')
 da.cumprod(dim='d')
