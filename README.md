@@ -12,10 +12,10 @@
 - `zip`, `enumerate`
 - `set` & `frozenset`
 - `eval` & `repr`
-- **collections**:`Counter`
-- **functools**:`lru_cache`, `functools.reduce`
+- **collections**: `Counter`
+- **functools**: `lru_cache`, `reduce`
 - `isinstance`
-- `sys.setrecursionlimit`
+- **sys**: `setrecursionlimit`
 - `map` & `starmap`
 - `filter`
 - `split` & `join`
