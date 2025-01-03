@@ -6,7 +6,8 @@
 1. [**argparse**: 命令行解析参数](argparse.py)
 2. [**multiprocessing**: 多进程加速](multiprocessing.py)
 3. [**pandas**: 数据分析工具](pandas.py)
-4. [**xarray**: 多维数组处理](xarray.py)
+4. [**scipy**: 统计计算](scipy.py)
+5. [**xarray**: 多维数组处理](xarray.py)
 
 ## [实用函数](useful_function.py)
 - `zip`: 打包多个可迭代对象。
