@@ -100,3 +100,8 @@ s.split() #['I','am','a','pig']
 li=['a','b','c']
 '.'.join(li) #'a.b.c'
 
+#14.warnings
+
+#禁止所有烦人的warning，例如除0等
+import warnings
+warnings.filterwarnings("ignore")
