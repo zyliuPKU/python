@@ -107,3 +107,10 @@ import warnings
 warnings.filterwarnings("ignore")
 import numpy as np
 np.seterr(divide='ignore', invalid='ignore')
+
+#15.os
+import os
+
+os.listdir(path) #读取path对应文件夹中的所有文件，返回列表
+
+
