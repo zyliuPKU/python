@@ -113,4 +113,8 @@ import os
 
 os.listdir(path) #读取path对应文件夹中的所有文件，返回列表
 
+#16.*args,**kwargs
+def f(*args,**kwargs):
+  return pd.read_csv(*args,**kwargs)
 
+f('.csv',sep=',',usecols=['a','b'])
