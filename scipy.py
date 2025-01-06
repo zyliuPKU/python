@@ -9,3 +9,8 @@ norm.cdf(1.96) #累计概率
 from scipy.stats import skew,kurtosis,moment
 skew([1,2,3,4,5])
 moment(da,3)#对da的第一个维度计算三阶矩
+
+#一元线性回归
+X=np.random.rand(100)
+y=X+np.random.randn(100)
+slope,intercept,r_value,p_value,std_err=stats.linregress(X,y)
