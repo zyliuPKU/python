@@ -66,4 +66,4 @@ df.rolling(2,min_periods=1).apply(lambda x:x.max()-x.min())
 #生成文件
 df.to_csv('data.csv')
 #读取文件
-pd.read('data.csv',index_col=0)
+pd.read('data.csv',index_col=0,sep=',',usecols=['col1','col2'])
