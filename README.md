@@ -4,11 +4,12 @@
 
 ## 模块介绍
 1. [**argparse**: 命令行解析参数](argparse.py)
-2. [**multiprocessing**: 多进程加速](multiprocessing.py)
-3. [**pandas**: 数据分析工具](pandas.py)
-4. [**scipy.stats**: 统计计算](scipy.py)
-5. [**sklearn**: 机器学习](sklearn.py)
-6. [**xarray**: 多维数组处理](xarray.py)
+2. [**datetime**: 日期时间操作](datetime.py)
+3. [**multiprocessing**: 多进程加速](multiprocessing.py)
+4. [**pandas**: 数据分析工具](pandas.py)
+5. [**scipy.stats**: 统计计算](scipy.py)
+6. [**sklearn**: 机器学习](sklearn.py)
+7. [**xarray**: 多维数组处理](xarray.py)
 
 ## [实用函数](useful_function.py)
 - `zip`: 打包多个可迭代对象。
