@@ -6,6 +6,12 @@ y=iris.target
 from sklearn.model_selection import train_test_split #训练集和测试集划分
 X_train,X_test,y_train,y_test=train_test_split(X,y,test_size=0.3,random_state=0)
 
+from sklearn import preprocessing
+scaler=preprocessing.StandardScaler()
+scaler=preprocessing.MinMaxScaler()
+scaler.fit(X_train)
+X_train=scaler.transform(X_train)
+
 from sklearn.model_selection import KFold #k折交叉验证
 kf=KFold(n_splits=5,shuffle=True,random_state=0) #在每个epoch打乱样本
 for train_index,test_index in kf.split(X):
