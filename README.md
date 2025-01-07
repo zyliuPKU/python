@@ -26,3 +26,5 @@
 - `split` & `join`: 字符串分割和合并。
 - **warnings** & **numpy**: `seterr`: 忽略警告处理。
 - **os**:处理路径
+- **args**&**kwargs**函数魔法参数
+- 
