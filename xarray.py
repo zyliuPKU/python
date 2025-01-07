@@ -85,6 +85,9 @@ xr.apply_ufunc(norm.ppf,da)
 #把某个维度的值全部替换为最后一个
 da=da.isel(e=-1).broadcast_like(da)
 
+std=da.std('e')
+std.broadcast_like(da)
+
 #生成nc文件
 da.to_netcdf('data.nc')
 #读取文件
