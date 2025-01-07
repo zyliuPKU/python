@@ -27,4 +27,5 @@
 - **warnings** & **numpy**: `seterr`: 忽略警告处理。
 - **os**:处理路径
 - **args**&**kwargs**函数魔法参数
-- 
+- **format**格式化字符串
+- **round**数值近似
