@@ -62,6 +62,7 @@ da.quantile(dim='d',q=0.1)
 
 #滚动方法
 da.rolling(d=2,min_periods=1).mean() #滚动包含当天，min_periods是窗口中至少包含多少不是nan的，默认等于设定窗口长度
+da.rolling_exp(d=2,window_type='halflife',min_periods=1).mean() #指数平滑
 da.rolling(d=2,min_periods=1).sum()
 da.rolling(d=2,min_periods=1).prod()
 da.rolling(d=2,min_periods=1).median()
