@@ -133,3 +133,6 @@ s.format(age=16)
 def f(path='{YYYYMM}.csv'):
   return pd.read_csv(path.format(YYYYMM='20240101'))
 
+#18.round
+round(2.393,2) #2.39
+
