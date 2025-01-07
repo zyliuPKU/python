@@ -118,3 +118,18 @@ def f(*args,**kwargs):
   return pd.read_csv(*args,**kwargs)
 
 f('.csv',sep=',',usecols=['a','b'])
+
+#17. format
+
+#方法一
+name='Alice'
+s='She is %s'%(name)
+#方法二
+s=f'She is {name}'
+
+#格式化字符串
+s='She if {age}'
+s.format(age=16)
+def f(path='{YYYYMM}.csv'):
+  return pd.read_csv(path.format(YYYYMM='20240101'))
+
