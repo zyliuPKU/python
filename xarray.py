@@ -88,6 +88,10 @@ da=da.isel(e=-1).broadcast_like(da)
 std=da.std('e')
 std.broadcast_like(da)
 
+res=res.sel(d=dates).where(np.isfinite(res))
+res=(res-res.weighted(wgt).mean('s'))/res.weighted(wgt).std('s')
+res=res.clip(min=-3,max=3).fillna(0).astype('float32')
+
 #生成nc文件
 da.to_netcdf('data.nc')
 #读取文件
