@@ -21,7 +21,7 @@ df['a'] #查询列名
 df.loc['x','a'] #查询先行名后列名
 df.loc['x']
 df.iloc[0] #查询第i行
-df.query('a=1 and day={date}') #字符串查询
+df.query(f'a=1 and day={date}') #字符串查询
 
 
 #获取数据
