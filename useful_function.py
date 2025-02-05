@@ -136,3 +136,6 @@ def f(path='{YYYYMM}.csv'):
 #18.round
 round(2.393,2) #2.39
 
+#19.assert
+assert x==y
+#断言语句，如果不成立则报错
