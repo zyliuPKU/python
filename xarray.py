@@ -85,9 +85,9 @@ def func(x,axis=None):
 da.rolling(d=2,min_periods=1).reduce(func)
 
 #计算当前数据在之前的分位数
-def func(x,axis=None):
-  return np.mean(x<x[:,-1].reshape(-1,1),axis=axis)
-da.rolling(d=2,min_periods=1).reduce(func)
+def func(x,axis):
+  return np.mean(x<x[:,:,:,-1].reshape(x.shape[0],x.shape[1],x.shape[2],1),axis=axis)
+da.rolling(e=5,min_periods=1).reduce(func)
 
 
 #自定义方法
