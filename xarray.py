@@ -78,6 +78,17 @@ da.rolling(d=2,min_periods=1).construct('w').quantile(dim='w',q=0.1)
 da.rolling(d=2,min_periods=1).construct('w').rank(dim='w')
 wgt=[1,2]
 (da.rolling(d=2,min_periods=1).construct('w')*wgt).sum(dim='w')#内积
+#加权平均
+wgt=[1,2]
+def func(x,axis=None):
+  return np.dot(x,wgt)
+da.rolling(d=2,min_periods=1).reduce(func)
+
+#计算当前数据在之前的分位数
+def func(x,axis=None):
+  return np.mean(x<x[:,-1].reshape(-1,1),axis=axis)
+da.rolling(d=2,min_periods=1).reduce(func)
+
 
 #自定义方法
 xr.apply_ufunc(norm.ppf,da)
