@@ -89,6 +89,10 @@ def func(x,axis):
   return np.mean(x<x[:,:,:,-1].reshape(x.shape[0],x.shape[1],x.shape[2],1),axis=axis)
 da.rolling(e=5,min_periods=1).reduce(func)
 
+def g(x,axis,idx):
+    i_idx, j_idx, k_idx = np.indices(x.shape[:-1])
+    return x[i_idx, j_idx, k_idx, np.array(idx.values).astype(int)]
+da2.rolling(e=2).reduce(g,idx=idx)
 
 #自定义方法
 xr.apply_ufunc(norm.ppf,da)
